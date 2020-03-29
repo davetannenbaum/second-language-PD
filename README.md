@@ -1,0 +1,3 @@
+### Code and data for Hayakawa et al. (2017) "Thinking more or feeling less? Explaining the foreign language effect on moral judgment" ###
+
+Contains data and code for reproducing all results reported in Hayakawa et al. (2017). Folders correspond to experiments reported in the paper. Each folder contains: (1) a "raw" and "cleaned" data file (`.csv` file); (2) a codebook for the cleaned data set (`.md` file), and (3) a STATA do-file that prepares/cleans the raw data file and executes all analyses reported in the paper (`.do` file).
