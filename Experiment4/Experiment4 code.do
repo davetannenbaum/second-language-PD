@@ -15,8 +15,8 @@ import delimited "Experiment4/Experiment4 raw.csv", varnames(1) case(preserve) c
 quietly destring, replace
 
 // filtering subjects
-rencode Include, replace
-replace Include = Include - 1
+// note: requires 'encoder' program from SSC
+encoder Include, replace setzero
 keep if Include == 1
 gen id = _n
 

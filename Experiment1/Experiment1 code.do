@@ -19,8 +19,9 @@ quietly destring, replace
 keep if Include == "Yes"
 
 // renaming variables
+// note: requires 'encoder' program from SSC
 rename V5 cond
-rencode cond, replace
+encoder cond, replace
 replace cond = 0 if cond == 2
 label define condl 0 "L1" 1 "L2"
 label val cond condl

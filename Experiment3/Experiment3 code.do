@@ -16,8 +16,8 @@ drop in 1
 quietly destring, replace
 
 // filtering subjects
-rencode Include, replace
-replace Include = Include - 1
+// note: requires 'encoder' program from SSC
+encoder Include, replace setzero
 keep if Include == 1
 gen id = _n
 
